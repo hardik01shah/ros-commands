@@ -1,0 +1,40 @@
+roslaunch rosbridge_server rosbridge_websocket.launch
+
+chmod +x final.py 
+./final.py
+
+catkin_make
+
+catkin_create_pkg control_test rospy
+
+
+hostname -I
+
+rostopic echo /topicname
+
+
+export TURTLEBOT3_MODEL=waffle_pi
+
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+
+rosrun map_server map_saver 
+
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+
+sudo apt-get install ros-melodic-dwa-local-planner
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/hardik/map.yaml
+
+
+sudo apt-get install ros-melodic-slam-gmapping
+
+rosrun rqt_graph rqt_graph 
+
+rosrun gazebo_ros gazebo
+export TURTLEBOT3_MODEL=waffle_pi
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
+
+source devel/setup.bash
+
