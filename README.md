@@ -73,7 +73,7 @@ Installation
 ```sh
 sudo apt-get install ros-melodic-turtlebot3-*
 ```
-Run this command before every turtlebot3 command to set the model. <value> can be waffle_pi, waffle, burger
+Run this command before every turtlebot3 command to set the model. *value* can be waffle_pi, waffle, burger
 ```sh
 export TURTLEBOT3_MODEL=<value>
 ```
