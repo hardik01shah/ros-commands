@@ -109,6 +109,11 @@ export TURTLEBOT3_MODEL=<value>
   ```sh
   roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
   ```
+## Save a map created using SLAM:
+```sh
+rosrun map_server map_saver
+```
+
 ## Rosbridge suite launch:
   Installation
   ```sh
